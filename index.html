@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+</head>
+<style>
+
+    body{
+        background-color:#4a706a;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 16px;
+    }
+    
+    html {
+        font-family: "Lucida Sans", sans-serif;
+    }
+
+    .header {
+        background-color:#33302f ;
+        color: #7ffabd;
+        padding: 15px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #8381f0;
+        color: #dacece;
+        box-shadow: 0 1px 3px rgba(250, 9, 9, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+        background-color: #88ec05;
+    }
+
+    .aside {
+        padding: 80px;
+        color: #fefffe;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .footer {
+        background-color:#33302f ;
+        color: #0505e7;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    @media only screen and (max-width: 766px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+
+    /* For width smaller than 400px: */
+    .aside {
+    background-repeat: no-repeat;
+    background-image: url("img/Gears\ of\ war.jpg");
+    }
+
+    /* For width 400px and larger: */
+    @media only screen and (min-width: 1100px) {
+    .aside {
+       background-image: url("img/Halo.jpg"); 
+    }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="header">
+      <h1>Practica 9</h1>
+    </div>
+    
+    <div class="row">
+    
+    <div class="col-3 menu">
+      <ul>
+        <li><a href="https://israf.github.io/practica1/">Practica 1</a></li>
+        <li><a href="https://israf.github.io/practica2/">Practica 2</a></li>
+        <li><a href="https://israf.github.io/practica3/">Practica 3</a></li>
+        <li><a href="https://israf.github.io/practica4/">Practica 4</a></li>
+        <li><a href="https://israf.github.io/practica5/">Practica 5</a></li>
+        <li><a href="https://israf.github.io/practica6/">Practica 6</a></li>
+        <li><a href="https://israf.github.io/practica7/">Practica 7</a></li>
+        <li><a href="https://israf.github.io/practica8/">Practica 8</a></li>      
+    </ul>
+    </div>
+    
+    <div class="col-6">
+     
+        <div align="center"><h1>MI CV</h1> </div>
+
+        <b>Fotograf&iacute;a</b><br><br>
+        <img src="img/imagen.png" height="250" width="250"><br><br>
+      
+        <b>Video</b><br><br>
+      
+        <video width="450" height="250" controls>
+          <source src="video/Yo.mp4">
+        </video><br><br>
+      
+        <b>Direcci&oacute;n</b><br><br>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1676941128815!6m8!1m7!1sRES6eBtLvdK7lNYOCPnrag!2m2!1d18.80804836431562!2d-97.1836201127259!3f319.92267000395765!4f-8.981683034983163!5f0.7820865974627469" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+      
+        <br><br>
+        
+        <div align="center"><h3><b><big><big>Datos</big></big></b></h3></div>
+      
+          <h2><b>Datos personales</b></h2>
+      <ul style="list-style-type:square">
+        <li>Nombre completo: <b>Hernandez Santiago Israel</b></li>
+        <li>Fecha de nacimiento: <b>01/01/2002</b></li>
+        <li>Lugar de nacimiento: <b>Ciudad Mendoza</b></li>
+      </ul>
+      
+          <h2><b>Formaci&oacute;n acad&eacute;mica</b></h2>
+      <ul style="list-style-type:square">
+        <li>2008 - 2014: <b>Primaria Enrique C. Redsamen</b></li>
+        <li>2014 - 2017: <b>Escuela Secundaria Esfuerzo Obrero</b></li>
+        <li>2017 - 2020: <b>Centro de Estudios y Tecnol&oacute;gicos e Industriales y de Servicios 146</b></li>
+        <li>2020 - 2025: <b>Tecnol&oacute;gico Nacional de M&eacute;xico Instituto Tecnol&oacute;gico de Orizaba</b></li>
+      </ul>
+      
+          <h2><b>Experiencia laboral</b></h2>
+      <ul style="list-style-type:square">
+        <li>2017 - 2020: <b>Manejo de las Tics</b></li>
+        <li>2018 - 2020: <b>Programador en Java, C++, HTML & PostgreSQL</b></li>
+        <li>2019 - 2020: <b>Programador de App Web y Moviles</b></li>
+      </ul>
+
+        <footer>
+
+            <p>comentarios (0)</p>
+
+        </footer>
+    </article><!-- Fin Primer articulo-->
+
+    <article><!-- Segundo articulo-->
+
+    </div>
+    
+    <div class="col-3 right">
+      <div class="aside">
+        <p style="margin: top 250px;"></p>
+      </div>
+    </div>
+    </div>
+    
+    <div class="footer">
+      <p></p>
+    </div>
+    </body>
+</html>
